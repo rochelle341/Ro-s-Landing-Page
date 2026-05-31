@@ -1,53 +1,317 @@
-de
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security and quality
-Insights
-Settings
-Files
-Go to file
-t
-T
-README.md
-index.html
-Ro-s-Landing-Page
-/
-index.html
-in
-main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ro | Helping Women Embrace Life Again</title>
 
-Edit
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
-Preview
-Indent mode
+<style>
+:root {
+  --cream:#F7F2EB;
+  --plum:#5A1E4A;
+  --lilac:#D8C4E8;
+  --gold:#C8A05A;
+  --charcoal:#333333;
+  --white:#FAF8F4;
+}
 
-Spaces
-Indent size
+body {
+  margin:0;
+  font-family:Montserrat, sans-serif;
+  background:var(--cream);
+  color:var(--charcoal);
+  line-height:1.7;
+}
 
-4
-Line wrap mode
+header {
+  background:var(--plum);
+  color:var(--cream);
+  padding:24px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 
-No wrap
-Editing index.html file contents
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
+.logo {
+  font-family:Allura, cursive;
+  font-size:44px;
+  color:var(--gold);
+}
+
+nav a {
+  color:var(--cream);
+  margin-left:20px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+section {
+  padding:70px 8%;
+}
+
+.hero {
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:40px;
+  align-items:center;
+}
+
+h1, h2, h3 {
+  font-family:"Cormorant Garamond", serif;
+  color:var(--plum);
+}
+
+h1 {
+  font-size:72px;
+  line-height:1;
+  margin-bottom:20px;
+}
+
+h2 {
+  font-size:46px;
+  text-align:center;
+}
+
+.hero p {
+  font-size:21px;
+}
+
+.button {
+  display:inline-block;
+  background:var(--plum);
+  color:var(--cream);
+  padding:14px 24px;
+  border-radius:30px;
+  margin-top:20px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.photo-box {
+  background:linear-gradient(135deg,var(--lilac),var(--cream));
+  border:2px solid var(--gold);
+  border-radius:28px;
+  min-height:360px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:var(--plum);
+  font-family:"Cormorant Garamond", serif;
+  font-size:32px;
+  padding:30px;
+}
+
+.intro {
+  background:var(--white);
+}
+
+.intro-inner {
+  max-width:850px;
+  margin:auto;
+}
+
+.quote {
+  font-family:"Cormorant Garamond", serif;
+  color:var(--plum);
+  font-size:42px;
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+}
+
+.gold-line {
+  width:90px;
+  height:3px;
+  background:var(--gold);
+  margin:25px auto;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.card {
+  background:var(--white);
+  border:1px solid var(--gold);
+  border-radius:24px;
+  padding:30px;
+  box-shadow:0 12px 30px rgba(90,30,74,.08);
+}
+
+.card h3 {
+  font-size:32px;
+}
+
+.lilac {
+  background:linear-gradient(135deg,rgba(216,196,232,.6),rgba(247,242,235,.9));
+}
+
+footer {
+  background:var(--plum);
+  color:var(--cream);
+  text-align:center;
+  padding:40px 8%;
+}
+
+footer .logo {
+  font-size:54px;
+}
+
+@media(max-width:850px){
+  .hero, .cards {
+    grid-template-columns:1fr;
+  }
+
+  nav {
+    display:none;
+  }
+
+  h1 {
+    font-size:52px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">RO</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#start">Start Here</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#lounge">Ro’s Lounge</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Helping Women Embrace Life Again</h1>
+    <p>Through wine, travel, meaningful experiences, and community.</p>
+    <a class="button" href="#start">Start Here</a>
+  </div>
+
+  <div class="photo-box">
+    Photo of Ro Coming Soon
+  </div>
+</section>
+
+<section class="intro" id="about">
+  <div class="intro-inner">
+    <h2>Meet Ro</h2>
+
+    <p>Hey lady, I'm Ro.</p>
+
+    <p>A few years ago, my life looked very different.</p>
+
+    <p>I was caring for my father, navigating cancer treatment, and trying to find my footing through some of life's most unexpected challenges. Somewhere along the way, I realized something I see in so many women today:</p>
+
+    <p><strong>We get so busy taking care of everyone else that we forget to keep living ourselves.</strong></p>
+
+    <p>That's why I do what I do.</p>
+
+    <p>Through wine tastings, travel experiences, meaningful conversations, and community, I create opportunities for women to reconnect with joy, confidence, connection, and themselves.</p>
+
+    <p>Some women find me because they want to travel.<br>
+    Some come for the wine.<br>
+    Some are looking for community.</p>
+
+    <p>What they often discover is permission to stop waiting and start embracing life again.</p>
+
+    <p>So take a look around.</p>
+
+    <p>Pour a glass, find a trip, read a reflection, or simply stay awhile.</p>
+
+    <p><strong>There's a seat for you here.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="gold-line"></div>
+  <p class="quote">We get so busy taking care of everyone else that we forget to keep living ourselves.</p>
+  <div class="gold-line"></div>
+</section>
+
+<section id="start">
+  <h2>Start Here</h2>
+  <p style="text-align:center;">There is more than one way to begin.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🍷 Wine Tasting with Ro</h3>
+      <p><strong>Connection begins here.</strong></p>
+      <p>For women who want conversation, connection, and a beautiful wine experience.</p>
+    </div>
+
+    <div class="card">
+      <h3>✈️ Crimson Travel</h3>
+      <p><strong>Experience life beyond your routine.</strong></p>
+      <p>For women ready to travel, make memories, and enjoy meaningful experiences without doing all the planning themselves.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤍 Ro’s Lounge</h3>
+      <p><strong>Soul Care for Real Life.</strong></p>
+      <p>For women who want reflection, inspiration, community, and reminders that their next chapter still matters.</p>
+    </div>
+  </div>
+</section>
+
+<section class="lilac" id="experiences">
+  <h2>Upcoming Experiences</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Arizona</h3>
+      <p>Women, Wine & Wellness, a soft luxury experience for rest, reconnection, and joy.</p>
+    </div>
+
+    <div class="card">
+      <h3>Napa Valley</h3>
+      <p>Wine country, beautiful scenery, meaningful connection, and grown woman travel energy.</p>
+    </div>
+
+    <div class="card">
+      <h3>Chicago</h3>
+      <p>Bubbly, bold, blues, beautiful meals, city energy, and unforgettable moments.</p>
+    </div>
+  </div>
+</section>
+
+<section id="lounge">
+  <h2>Ro’s Lounge</h2>
+  <p style="max-width:800px;margin:auto;text-align:center;">
+    Ro’s Lounge is the reflective side of the brand, a space for women navigating life, change, healing, growth, and the quiet work of choosing themselves again.
+  </p>
+
+  <p class="quote">There’s a seat for you here.</p>
+</section>
+
+<section class="lilac">
+  <h2>Soft Life Sundays, Travel Edition</h2>
+  <p style="max-width:800px;margin:auto;text-align:center;">
+    Soft Life Sundays is a weekly reflection series about travel, joy, connection, rest, and embracing this season of life.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Connect with Ro</h2>
+  <p style="text-align:center;">Interested in wine tastings, group travel, Ro’s Lounge, collaborations, or upcoming experiences?</p>
+  <p style="text-align:center;"><strong>Email:</strong> crimsontravel@outlook.com</p>
+  <p style="text-align:center;"><strong>Instagram:</strong> @crimsontravel</p>
+</section>
+
+<footer>
+  <div class="logo">RO</div>
+  <p>Helping Women Embrace Life Again</p>
+  <p>Wine Tasting with Ro | Crimson Travel | Ro’s Lounge</p>
+</footer>
+
+</body>
+</html>
